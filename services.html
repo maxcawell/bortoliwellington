@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,32 +7,51 @@
   <title>Services - Bortoli Wellington</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --green: #4b9b2d;
+      --blue: #00598c;
+      --light-gray: #f4f4f4;
+    }
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      background-color: white;
+      color: #222;
     }
     header {
-      background-color: #003366;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+      background-color: var(--light-gray);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      color: var(--green);
+      margin: 0 10px;
+      font-size: 1.5rem;
     }
     nav {
-      background-color: #005599;
+      background-color: var(--blue);
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
+      padding: 10px 0;
     }
     nav a {
       color: white;
       text-decoration: none;
-      padding: 15px 20px;
-      display: inline-block;
+      padding: 10px 20px;
+      font-weight: bold;
+      transition: background-color 0.3s;
     }
     nav a:hover {
-      background-color: #003366;
+      background-color: #003f66;
     }
     section {
       padding: 60px 20px;
@@ -39,17 +59,19 @@
       margin: auto;
     }
     footer {
-      background-color: #f4f4f4;
+      background-color: var(--light-gray);
       text-align: center;
       padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="logo.png" alt="Bortoli Wellington Logo" />
     <h1>Bortoli Wellington</h1>
-    <p>We Measure Up</p>
   </header>
 
   <nav>
@@ -65,7 +87,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Bortoli Wellington. All rights reserved.</p>
+    &copy; 2025 Bortoli Wellington. All rights reserved.
   </footer>
 
 </body>

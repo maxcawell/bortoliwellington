@@ -7,59 +7,85 @@
   <title>Bortoli Wellington</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --green: #4b9b2d;
+      --blue: #00598c;
+      --light-gray: #f4f4f4;
+    }
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      background-color: white;
+      color: #222;
     }
     header {
-      background-color: #003366;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+      background-color: var(--light-gray);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      color: var(--green);
+      margin: 0 10px;
+      font-size: 1.5rem;
     }
     nav {
-      background-color: #005599;
+      background-color: var(--blue);
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
+      padding: 10px 0;
     }
     nav a {
       color: white;
       text-decoration: none;
-      padding: 15px 20px;
-      display: inline-block;
+      padding: 10px 20px;
+      font-weight: bold;
+      transition: background-color 0.3s;
     }
     nav a:hover {
-      background-color: #003366;
+      background-color: #003f66;
     }
-    section {
+    .hero {
+      background: linear-gradient(135deg, var(--green), var(--blue));
+      color: white;
       padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+      text-align: center;
+    }
+    .hero h2 {
+      margin-top: 0;
+      font-size: 2rem;
     }
     .hero-image {
-      text-align: center;
       margin-top: 30px;
     }
     .hero-image img {
       max-width: 100%;
       height: auto;
       border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     footer {
-      background-color: #f4f4f4;
+      background-color: var(--light-gray);
       text-align: center;
       padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="logo.png" alt="Bortoli Wellington Logo" />
     <h1>Bortoli Wellington</h1>
-    <p>We Measure Up</p>
   </header>
 
   <nav>
@@ -69,17 +95,16 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section>
-    <h2>Welcome</h2>
-    <p>This is the homepage for Bortoli Wellington. Use the navigation links to explore more about us, our services, and how to get in touch.</p>
-
+  <section class="hero">
+    <h2>Licensed Land Surveyors & Property Development Consultants</h2>
+    <p>Delivering precision, professionalism, and planning solutions to landowners, developers, and councils.</p>
     <div class="hero-image">
       <img src="surveying-equipment.png" alt="Surveying Equipment">
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Bortoli Wellington. All rights reserved.</p>
+    &copy; 2025 Bortoli Wellington. All rights reserved.
   </footer>
 
 </body>
