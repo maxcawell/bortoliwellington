@@ -9,8 +9,8 @@
   <style>
     :root {
       --green: #4b9b2d;
-      --blue: #00598c;
-      --light-gray: #f4f4f4;
+      --light-gray: #f9f9f9;
+      --text-color: #2b2b2b;
     }
     * {
       box-sizing: border-box;
@@ -20,64 +20,57 @@
       margin: 0;
       padding: 0;
       background-color: white;
-      color: #222;
+      color: var(--text-color);
     }
     header {
-      background-color: var(--light-gray);
-      padding: 10px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 20px 30px;
+      background-color: white;
+      border-bottom: 1px solid #eee;
     }
     header img {
       height: 50px;
     }
-    header h1 {
-      color: var(--green);
-      margin: 0 10px;
-      font-size: 1.5rem;
-    }
-    nav {
-      background-color: var(--blue);
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
     nav a {
-      color: white;
+      margin-left: 20px;
       text-decoration: none;
-      padding: 10px 20px;
-      font-weight: bold;
-      transition: background-color 0.3s;
+      color: var(--text-color);
+      font-weight: 500;
+      transition: color 0.3s;
     }
     nav a:hover {
-      background-color: #003f66;
+      color: var(--green);
     }
     .hero {
-      background: linear-gradient(135deg, var(--green), var(--blue));
-      color: white;
-      padding: 60px 20px;
       text-align: center;
+      padding: 80px 20px;
+      background-color: var(--light-gray);
     }
-    .hero h2 {
-      margin-top: 0;
-      font-size: 2rem;
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
-    .hero-image {
-      margin-top: 30px;
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 30px auto;
     }
-    .hero-image img {
-      max-width: 100%;
+    .hero img {
+      max-width: 90%;
       height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      margin-top: 40px;
     }
     footer {
       background-color: var(--light-gray);
       text-align: center;
       padding: 20px;
       font-size: 0.9rem;
-      color: #555;
+      color: #666;
+      border-top: 1px solid #eee;
     }
   </style>
 </head>
@@ -85,22 +78,18 @@
 
   <header>
     <img src="logo.png" alt="Bortoli Wellington Logo" />
-    <h1>Bortoli Wellington</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
   <section class="hero">
-    <h2>Licensed Land Surveyors & Property Development Consultants</h2>
-    <p>Delivering precision, professionalism, and planning solutions to landowners, developers, and councils.</p>
-    <div class="hero-image">
-      <img src="surveying-equipment.png" alt="Surveying Equipment">
-    </div>
+    <h1>Land Surveying & Property Development</h1>
+    <p>Experts in precision and planning, Bortoli Wellington delivers professional surveying services for landowners, developers, and councils.</p>
+    <img src="surveying-equipment.png" alt="Surveying Equipment">
   </section>
 
   <footer>
