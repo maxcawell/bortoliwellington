@@ -27,12 +27,16 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 30px 40px;
+      padding: 40px 50px;
       background-color: white;
       border-bottom: 1px solid #eee;
     }
-    header img {
-      height: 75px;
+    .logo-container {
+      padding: 5px 10px;
+    }
+    .logo-container img {
+      height: 130px;
+      display: block;
     }
     nav a {
       margin-left: 30px;
@@ -96,7 +100,9 @@
 <body>
 
   <header>
-    <img src="logo.png" alt="Bortoli Wellington Logo" />
+    <div class="logo-container">
+      <img src="logo-cropped.png" alt="Bortoli Wellington Logo" />
+    </div>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
