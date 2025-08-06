@@ -152,6 +152,13 @@ nav a.active {
   box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
+.form-section-title {
+  margin: 20px 0 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dark-green);
+}
+
 .form-container form input,
 .form-container form textarea,
 .form-container form select {
@@ -161,6 +168,13 @@ nav a.active {
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-container form ::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95rem;
+  color: #999;
 }
 
 .form-container form select {

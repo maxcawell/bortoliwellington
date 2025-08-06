@@ -36,13 +36,16 @@
   <section class="contact-form-section">
     <div class="form-container">
       <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
-        
+
+        <h3 class="form-section-title">Full Name & Contact Information</h3>
         <input type="text" name="name" placeholder="Full Name" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="tel" name="phone" placeholder="Phone" required>
 
+        <h3 class="form-section-title">Property Details</h3>
         <textarea name="property_address" placeholder="Address of Property" rows="2"></textarea>
 
+        <h3 class="form-section-title">Survey Information</h3>
         <select name="survey_type" required>
           <option value="" disabled selected>Select Type of Survey</option>
           <option>Boundary Survey</option>
@@ -61,6 +64,7 @@
           <option>Other</option>
         </select>
 
+        <h3 class="form-section-title">Additional Comments</h3>
         <textarea name="additional_comments" placeholder="Additional Comments" rows="5" required></textarea>
 
         <button type="submit">Send</button>
