@@ -29,7 +29,7 @@
   </header>
 
   <!-- Hero / Home Section -->
-  <section id="home" class="hero">
+  <section id="home" class="hero page-section">
     <h1>Land Surveying & Development Solutions</h1>
     <p>Delivering expert land surveying and property development advice with precision, experience, and integrity.</p>
     <div class="cta">
@@ -132,6 +132,20 @@
         hamburger.classList.remove('active');
       });
     });
+
+    // Active link on scroll
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => link.classList.remove('active'));
+          const activeLink = document.querySelector(`nav a[href="#${entry.target.id}"]`);
+          if (activeLink) activeLink.classList.add('active');
+        }
+      });
+    }, { threshold: 0.5 });
+
+    sections.forEach(section => observer.observe(section));
   </script>
 
 </body>
