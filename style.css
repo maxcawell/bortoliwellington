@@ -9,6 +9,10 @@
 * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
 body { font-family: 'Roboto', sans-serif; color: var(--text-color); }
 
+/* Layout */
+.full-width { width: 100%; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
 /* Header */
 header {
   display: flex; justify-content: space-between; align-items: center;
@@ -44,14 +48,12 @@ nav a.active { color: var(--green); }
 
 /* Sections */
 .page-section {
-  padding: 120px 20px;
-  max-width: 900px;
-  margin: auto;
+  padding: 120px 0;
   text-align: center;
   scroll-margin-top: 100px;
 }
 .page-section h2 { font-size: 2rem; color: var(--dark-green); margin-bottom: 20px; }
-.page-section p { font-size: 1.1rem; line-height: 1.6; }
+.page-section p { font-size: 1.1rem; line-height: 1.6; max-width: 900px; margin: auto; }
 
 .hero {
   text-align: center;
@@ -60,6 +62,8 @@ nav a.active { color: var(--green); }
 .hero h1 { font-size: 2.8rem; margin-bottom: 15px; color: var(--dark-green); }
 .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 40px auto; line-height: 1.6; }
 .hero img { max-width: 90%; margin-top: 50px; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+
+.light-bg { background-color: #f9f9f9; }
 
 /* Features */
 .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
@@ -76,7 +80,6 @@ nav a.active { color: var(--green); }
 @media (max-width: 600px) { .features { grid-template-columns: 1fr; } }
 
 /* Contact Form */
-.contact-form-section { background: #f9f9f9; }
 .form-container {
   max-width: 600px; width: 100%; background: white; padding: 30px;
   border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); margin: auto;
@@ -98,4 +101,4 @@ form button:hover { background: var(--dark-green); }
 
 /* Footer */
 footer { background: var(--light-gray); text-align: center; padding: 25px;
-         font-size: 0.95rem; color: #666; border-top: 1px solid #eee; margin-top: 60px; }
+         font-size: 0.95rem; color: #666; border-top: 1px solid #eee; margin-top: 0; }
