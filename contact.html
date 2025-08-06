@@ -30,16 +30,39 @@
 
   <section class="hero small-hero">
     <h1>Contact Us</h1>
-    <p>If you'd like to get in touch, please fill out the form below or reach us directly.</p>
+    <p>Please complete the form below and we'll get back to you as soon as possible.</p>
   </section>
 
   <section class="contact-form-section">
     <div class="form-container">
-      <p>Email: info@yourdomain.com<br>Phone: (000) 000-0000</p>
-      <form action="https://formsubmit.co/admin@bortoliwellington.com.au" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+        
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone" required>
+
+        <textarea name="property_address" placeholder="Address of Property" rows="2"></textarea>
+
+        <select name="survey_type" required>
+          <option value="" disabled selected>Select Type of Survey</option>
+          <option>Boundary Survey</option>
+          <option>Construction Set-Out</option>
+          <option>Subdivision Survey</option>
+          <option>Feature & Level Survey</option>
+          <option>Other</option>
+        </select>
+
+        <select name="survey_purpose" required>
+          <option value="" disabled selected>Purpose of Survey</option>
+          <option>New Dwelling</option>
+          <option>Extension or Renovation</option>
+          <option>Subdivision Planning</option>
+          <option>Permit Application</option>
+          <option>Other</option>
+        </select>
+
+        <textarea name="additional_comments" placeholder="Additional Comments" rows="5" required></textarea>
+
         <button type="submit">Send</button>
       </form>
     </div>
