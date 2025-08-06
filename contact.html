@@ -9,7 +9,6 @@
 </head>
 <body>
 
-
   <header>
     <div class="logo-container">
       <img src="logo-cropped.png" alt="Bortoli Wellington Logo" />
@@ -19,7 +18,7 @@
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
 
     <div class="hamburger" id="hamburger">
@@ -29,7 +28,6 @@
     </div>
   </header>
 
-
   <section class="hero small-hero">
     <h1>Contact Us</h1>
     <p>If you'd like to get in touch, please fill out the form below or reach us directly.</p>
@@ -38,15 +36,14 @@
   <section class="contact-form-section">
     <div class="form-container">
       <p>Email: info@yourdomain.com<br>Phone: (000) 000-0000</p>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
+      <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit">Send</button>
       </form>
     </div>
   </section>
-
 
   <footer>
     &copy; 2025 Bortoli Wellington. All rights reserved.
