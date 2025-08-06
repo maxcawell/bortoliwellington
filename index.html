@@ -81,15 +81,15 @@
           <input type="hidden" name="_next" value="thank-you.html">
           <input type="hidden" name="_captcha" value="false">
 
-          <h3 class="form-section-title">Full Name & Contact Information</h3>
+          <h3 class="form-section-title">Full Name & Contact Information <span class="required-star">*</span></h3>
           <input type="text" name="name" placeholder="Full Name" required>
           <input type="email" name="email" placeholder="Email" required>
           <input type="tel" name="phone" placeholder="Phone" required>
 
-          <h3 class="form-section-title">Property Details</h3>
-          <textarea name="property_address" placeholder="Address of Property" rows="2"></textarea>
+          <h3 class="form-section-title">Property Details <span class="required-star">*</span></h3>
+          <textarea name="property_address" placeholder="Address of Property" rows="2" required></textarea>
 
-          <h3 class="form-section-title">Survey Information</h3>
+          <h3 class="form-section-title">Survey Information <span class="required-star">*</span></h3>
           <select name="survey_type" required>
             <option value="" disabled selected>Select Type of Survey</option>
             <option>Boundary Survey</option>
@@ -108,7 +108,7 @@
             <option>Other</option>
           </select>
 
-          <h3 class="form-section-title">Additional Comments</h3>
+          <h3 class="form-section-title">Additional Comments <span class="required-star">*</span></h3>
           <textarea name="additional_comments" placeholder="Additional Comments" rows="5" required></textarea>
 
           <button type="submit">Send</button>
