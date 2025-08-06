@@ -15,10 +15,10 @@
     </div>
     
     <nav id="nav-menu">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <div class="hamburger" id="hamburger">
@@ -28,32 +28,82 @@
     </div>
   </header>
 
-  <section class="hero">
+  <!-- Hero / Home Section -->
+  <section id="home" class="hero">
     <h1>Land Surveying & Development Solutions</h1>
     <p>Delivering expert land surveying and property development advice with precision, experience, and integrity.</p>
     <div class="cta">
-      <a href="contact.html">Get in Touch</a>
+      <a href="#contact">Get in Touch</a>
     </div>
     <img src="surveying-equipment.png" alt="Surveying Equipment">
   </section>
 
-  <section class="features">
-    <div class="feature-card">
-      <div class="icon">📏</div>
-      <h3>Boundary Surveys</h3>
-      <p>Accurate boundary and title re-establishment surveys for secure property development.</p>
-    </div>
+  <!-- About Section -->
+  <section id="about" class="page-section">
+    <h2>About Us</h2>
+    <p>We are a team of experienced licensed land surveyors and property development consultants, committed to delivering high-quality planning, measurement, and advisory services for a wide range of clients.</p>
+  </section>
 
-    <div class="feature-card">
-      <div class="icon">🏗️</div>
-      <h3>Construction Set-Outs</h3>
-      <p>Precise layout and measurements for construction projects of all scales.</p>
+  <!-- Services Section -->
+  <section id="services" class="page-section">
+    <h2>Our Services</h2>
+    <div class="features">
+      <div class="feature-card">
+        <div class="icon">📏</div>
+        <h3>Boundary Surveys</h3>
+        <p>Accurate boundary and title re-establishment surveys for secure property development.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🏗️</div>
+        <h3>Construction Set-Outs</h3>
+        <p>Precise layout and measurements for construction projects of all scales.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🗺️</div>
+        <h3>Subdivision Planning</h3>
+        <p>Expert planning and guidance to ensure smooth property subdivisions and approvals.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="feature-card">
-      <div class="icon">🗺️</div>
-      <h3>Subdivision Planning</h3>
-      <p>Expert planning and guidance to ensure smooth property subdivisions and approvals.</p>
+  <!-- Contact Section -->
+  <section id="contact" class="page-section contact-form-section">
+    <h2>Contact Us</h2>
+    <div class="form-container">
+      <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+
+        <h3 class="form-section-title">Full Name & Contact Information</h3>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone" required>
+
+        <h3 class="form-section-title">Property Details</h3>
+        <textarea name="property_address" placeholder="Address of Property" rows="2"></textarea>
+
+        <h3 class="form-section-title">Survey Information</h3>
+        <select name="survey_type" required>
+          <option value="" disabled selected>Select Type of Survey</option>
+          <option>Boundary Survey</option>
+          <option>Construction Set-Out</option>
+          <option>Subdivision Survey</option>
+          <option>Feature & Level Survey</option>
+          <option>Other</option>
+        </select>
+
+        <select name="survey_purpose" required>
+          <option value="" disabled selected>Purpose of Survey</option>
+          <option>New Dwelling</option>
+          <option>Extension or Renovation</option>
+          <option>Subdivision Planning</option>
+          <option>Permit Application</option>
+          <option>Other</option>
+        </select>
+
+        <h3 class="form-section-title">Additional Comments</h3>
+        <textarea name="additional_comments" placeholder="Additional Comments" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
     </div>
   </section>
 
@@ -64,10 +114,23 @@
   <script>
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('nav a');
 
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('show');
       hamburger.classList.toggle('active');
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+        navMenu.classList.remove('show');
+        hamburger.classList.remove('active');
+      });
     });
   </script>
 
