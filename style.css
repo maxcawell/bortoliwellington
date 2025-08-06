@@ -1,0 +1,149 @@
+:root {
+  --green: #4b9b2d;
+  --dark-green: #357a20;
+  --light-gray: #f5f5f5;
+  --text-color: #2b2b2b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  color: var(--text-color);
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container img {
+  height: 80px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.05rem;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--green);
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a.active {
+  color: var(--green);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px 80px;
+  background: linear-gradient(135deg, #e7f7e4, #ffffff);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: var(--dark-green);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.hero img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  margin-top: 50px;
+  transition: transform 0.3s;
+}
+
+.hero img:hover {
+  transform: scale(1.02);
+}
+
+.cta {
+  margin-top: 40px;
+}
+
+.cta a {
+  background-color: var(--green);
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta a:hover {
+  background-color: var(--dark-green);
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  background-color: var(--light-gray);
+  text-align: center;
+  padding: 25px;
+  font-size: 0.95rem;
+  color: #666;
+  border-top: 1px solid #eee;
+  margin-top: 80px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin-left: 15px;
+    font-size: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
