@@ -35,7 +35,7 @@ nav a.active{color:var(--green)}
 .section-header h2{font-size:2rem;color:var(--dark-green);margin:0}
 .section-header .accent{width:70px;height:4px;background:linear-gradient(90deg,var(--green),var(--dark-green));margin:12px auto 0 auto;border-radius:999px}
 
-/* Decorative separators */
+/* Decorative separators removed */
 .section-sep{height:36px;background:transparent;position:relative}
 .section-sep--wave::before,
 .section-sep--wave.flip::before{
@@ -103,3 +103,16 @@ form button:hover{background:var(--green-2);transform:translateY(-2px);box-shado
 
 /* Utilities */
 .text-center{text-align:center}
+
+.section-sep, .section-sep--wave, .section-sep--tilt { display:none !important; }
+
+/* Smooth fades between sections */
+.fade {
+  height: 60px;
+}
+.fade--to-tint {
+  background: linear-gradient(to bottom, #ffffff 0%, #f6fbf3 100%);
+}
+.fade--to-white {
+  background: linear-gradient(to bottom, #f6fbf3 0%, #ffffff 100%);
+}
