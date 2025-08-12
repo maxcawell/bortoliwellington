@@ -105,14 +105,3 @@ form button:hover{background:var(--green-2);transform:translateY(-2px);box-shado
 .text-center{text-align:center}
 
 .section-sep, .section-sep--wave, .section-sep--tilt { display:none !important; }
-
-/* Smooth fades between sections */
-.fade {
-  height: 60px;
-}
-.fade--to-tint {
-  background: linear-gradient(to bottom, #ffffff 0%, #f6fbf3 100%);
-}
-.fade--to-white {
-  background: linear-gradient(to bottom, #f6fbf3 0%, #ffffff 100%);
-}
