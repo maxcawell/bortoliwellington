@@ -26,7 +26,7 @@
   </header>
 
   <!-- Hero -->
-  <section id="home" class="full-width hero">
+  <section id="home" class="full-width hero section--hero">
     <div class="container">
       <div class="hero-grid">
         <div class="hero-copy">
@@ -41,54 +41,64 @@
         </div>
       </div>
     </div>
+    <div class="section-sep section-sep--wave"></div>
   </section>
 
   <!-- About -->
-  <section id="about" class="full-width page-section light-bg">
+  <section id="about" class="full-width page-section section--tint">
     <div class="container">
-      
-      <h2>About Us</h2>
+      <div class="section-header">
+        <h2>About Us</h2>
+        <div class="accent"></div>
+      </div>
       <p><strong>Bortoli Wellington Pty Ltd.</strong> was incorporated in 1995 to provide professional land surveying services to organisations and individuals. Our services are continually monitored and updated to current industry standards to enhance the outcome for our clients.</p>
       <p>The directors, <strong>Robert Bortoli</strong> and <strong>Scott Wellington</strong>, together possess <strong>50+ years of experience</strong> covering all facets of the profession. We are a member firm of the <em>Association of Consulting Surveyors</em>, and the directors are members of the <em>Institution of Surveyors, Victoria</em>.</p>
       <p>All projects are directly supervised by one or both directors and delivered by a team of qualified surveyors, experienced survey technicians and assistants, and CAD draftspersons. We operate modern <strong>total stations (including robotic)</strong> and <strong>GPS</strong> equipment, alongside survey‑specific and CAD software, enabling delivery in a wide range of formats to meet stakeholder requirements.</p>
-
-      <div class="badges" style="margin-top:18px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+      <div class="badges">
         <span class="badge">Association of Consulting Surveyors — Member Firm</span>
         <span class="badge">Institution of Surveyors, Victoria — Director Members</span>
         <span class="badge">50+ Years Combined Director Experience</span>
       </div>
     </div>
+    <div class="section-sep section-sep--tilt"></div>
   </section>
 
   <!-- Services -->
-  <section id="services" class="full-width page-section">
+  <section id="services" class="full-width page-section section--white">
     <div class="container">
-      <h2>Our Services</h2>
-      <p>We deliver boundary and title work, construction set‑outs, subdivisions and development support, and detailed feature and level surveys — all supervised by a director.</p>
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <div class="accent"></div>
+      </div>
+      <p class="section-intro">Boundary & title work, construction set‑out, subdivisions & development support, and detailed feature & level survey deliverables.</p>
       <div class="features">
         <div class="feature-card">
-          <div class="icon">📏</div>
+          <div class="icon-wrap"><span class="icon">📏</span></div>
           <h3>Boundary & Title</h3>
-          <p>Title re‑establishment and boundary definition; plans of consolidation and easements.</p>
+          <p>Title re‑establishment and boundary definition; plan of consolidation and easement creation/variation.</p>
         </div>
         <div class="feature-card">
-          <div class="icon">🏗️</div>
+          <div class="icon-wrap"><span class="icon">🏗️</span></div>
           <h3>Construction & Sites</h3>
-          <p>Construction set‑outs, level & feature surveys, site analysis and existing conditions.</p>
+          <p>Construction set‑out, level & feature survey, site analysis and existing conditions survey.</p>
         </div>
         <div class="feature-card">
-          <div class="icon">🗺️</div>
+          <div class="icon-wrap"><span class="icon">🗺️</span></div>
           <h3>Subdivisions</h3>
-          <p>Greenfields and infill subdivisions, building subdivisions and development investigations.</p>
+          <p>Greenfields and infill residential subdivision, building subdivision, and development investigation.</p>
         </div>
       </div>
     </div>
+    <div class="section-sep section-sep--wave flip"></div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="full-width page-section light-bg contact-form-section">
+  <section id="contact" class="full-width page-section section--tint contact-form-section">
     <div class="container">
-      <h2>Contact Us</h2>
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <div class="accent"></div>
+      </div>
       <div class="form-container">
         <form action="https://formsubmit.co/admin@bortoliwellington.com.au"
               method="POST" accept-charset="UTF-8" autocomplete="on" novalidate>
@@ -108,33 +118,33 @@
           <select name="survey_type" required>
             <option value="" disabled selected>Select Type of Survey</option>
             <optgroup label="Boundary & Title">
-              <option>Title Re-establishment and boundary definition surveys</option>
-              <option>Applications to amend title</option>
-              <option>Plans of Consolidation</option>
-              <option>Creation, removal and variation of easements</option>
+              <option>Title Re-establishment and boundary definition survey</option>
+              <option>Application to amend title</option>
+              <option>Plan of Consolidation</option>
+              <option>Creation, removal and variation of easement</option>
             </optgroup>
             <optgroup label="Subdivisions & Development">
-              <option>Greenfields residential subdivisions</option>
-              <option>Infill Residential Subdivision</option>
-              <option>Building Subdivisions</option>
-              <option>Property Development Investigations</option>
+              <option>Greenfields residential subdivision</option>
+              <option>Infill residential subdivision</option>
+              <option>Building subdivision</option>
+              <option>Property development investigation</option>
             </optgroup>
-            <optgroup label="Site & Feature Surveys">
-              <option>Level and feature surveys</option>
-              <option>Site analysis and existing conditions surveys</option>
+            <optgroup label="Site & Feature Survey">
+              <option>Level and feature survey</option>
+              <option>Site analysis and existing conditions survey</option>
             </optgroup>
             <optgroup label="Heights, Control & Flood">
-              <option>AHD Levelling, flood level determination</option>
-              <option>GPS Surveys</option>
+              <option>AHD levelling, flood level determination</option>
+              <option>GPS survey</option>
             </optgroup>
             <optgroup label="Assets, Areas & Condition">
-              <option>Water Authority Asset Recording</option>
+              <option>Water authority asset recording</option>
               <option>ASPEC asset recording</option>
-              <option>Lettable Area surveys</option>
-              <option>Dilapidation surveys</option>
+              <option>Lettable area survey</option>
+              <option>Dilapidation survey</option>
             </optgroup>
             <optgroup label="Reports & Evidence">
-              <option>Provision of expert evidence reports</option>
+              <option>Provision of expert evidence report</option>
             </optgroup>
             <option>Other</option>
           </select>
@@ -157,7 +167,11 @@
     </div>
   </section>
 
-  <footer class="full-width">© 2025 Bortoli Wellington. All rights reserved.</footer>
+  <footer class="full-width footer">
+    <div class="container">
+      <p>© 2025 Bortoli Wellington. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script>
     const hamburger = document.getElementById('hamburger');
