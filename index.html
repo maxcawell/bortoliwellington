@@ -25,26 +25,21 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="full-width hero section--hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <h1>Land Surveying & Development Solutions</h1>
-          <p>Trusted since 1995. Director‑led teams, modern robotic total stations and GPS, and deliverables that meet current standards.</p>
-          <div class="cta">
-            <a href="#contact" class="btn-hero">Get in Touch</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <img src="surveying-equipment.png" alt="Surveying Equipment">
-        </div>
+  <!-- Hero: image background with local tagline -->
+  <section id="home" class="hero-visual-full">
+    <div class="hero-overlay"></div>
+    <img src="surveying-equipment.png" alt="Surveying equipment in the field" class="hero-bg">
+    <div class="hero-content">
+      <h1>Licensed Land Surveyors</h1>
+      <p class="hero-sub">Servicing Melbourne & Regional Victoria since 1995</p>
+      <div class="cta">
+        <a href="#contact" class="btn-hero">Get a Quote</a>
+        <a href="#services" class="btn-ghost">Our Services</a>
       </div>
     </div>
   </section>
 
-  
-  <!-- About -->
+  <!-- About (redesigned) -->
   <section id="about" class="full-width page-section">
     <div class="container">
       <div class="section-header">
@@ -53,7 +48,6 @@
       </div>
 
       <div class="about-grid">
-        <!-- Left: Narrative -->
         <div class="about-card">
           <h3 class="about-subtitle">Our History</h3>
           <p><strong>Bortoli Wellington Pty Ltd.</strong> was incorporated in 1995 to provide professional land surveying services to organisations and individuals. Our services are continually monitored and updated to current industry standards to enhance client outcomes.</p>
@@ -64,16 +58,19 @@
           <h3 class="about-subtitle">Our Commitment</h3>
           <p>All projects are directly supervised by one or both directors with support from qualified surveyors, experienced survey technicians and assistants, and CAD draftspersons. We operate modern <strong>robotic total stations</strong> and <strong>GPS</strong>, with survey‑specific and CAD software to deliver in the formats our stakeholders need.</p>
 
-          <div class="about-badges"><span class="badge">📅 Since 1995</span><span class="badge">🕒 50+ Years Director Experience</span><span class="badge">🤝 Member — Association of Consulting Surveyors</span><span class="badge">🎓 Directors — Institution of Surveyors, Victoria</span></div>
+          <div class="about-badges">
+            <span class="badge">📅 Since 1995</span>
+            <span class="badge">🕒 50+ Years Director Experience</span>
+            <span class="badge">🤝 Member — Association of Consulting Surveyors</span>
+            <span class="badge">🎓 Directors — Institution of Surveyors, Victoria</span>
+          </div>
         </div>
 
-        <!-- Right: Image / Visual -->
         <div class="about-visual">
           <img src="surveying-equipment.png" alt="Survey team with modern total station and GPS">
         </div>
       </div>
 
-      <!-- Service Groups overview -->
       <div class="about-groups">
         <div class="group-pill">📏 Boundary & Title</div>
         <div class="group-pill">🗺️ Subdivisions & Development</div>
@@ -85,37 +82,39 @@
     </div>
   </section>
 
-
   <!-- Services -->
-  <section id="services" class="full-width page-section section--white">
+  <section id="services" class="full-width page-section">
     <div class="container">
       <div class="section-header">
         <h2>Our Services</h2>
         <div class="accent"></div>
       </div>
-      <p class="section-intro">Boundary & title work, construction set‑out, subdivisions & development support, and detailed feature & level survey deliverables.</p>
-      <div class="features">
-        <div class="feature-card">
+      <p class="section-intro">Director‑led teams delivering boundary and title, construction set‑out, subdivisions, and detailed feature & level survey work across Victoria.</p>
+      <div class="features features--clickable">
+        <a class="feature-card" href="#contact" aria-label="Boundary and Title services">
           <div class="icon-wrap"><span class="icon">📏</span></div>
           <h3>Boundary & Title</h3>
           <p>Title re‑establishment and boundary definition; plan of consolidation and easement creation/variation.</p>
-        </div>
-        <div class="feature-card">
+          <span class="feature-cta">Enquire now →</span>
+        </a>
+        <a class="feature-card" href="#contact" aria-label="Construction and Sites services">
           <div class="icon-wrap"><span class="icon">🏗️</span></div>
           <h3>Construction & Sites</h3>
           <p>Construction set‑out, level & feature survey, site analysis and existing conditions survey.</p>
-        </div>
-        <div class="feature-card">
+          <span class="feature-cta">Enquire now →</span>
+        </a>
+        <a class="feature-card" href="#contact" aria-label="Subdivisions services">
           <div class="icon-wrap"><span class="icon">🗺️</span></div>
           <h3>Subdivisions</h3>
           <p>Greenfields and infill residential subdivision, building subdivision, and development investigation.</p>
-        </div>
+          <span class="feature-cta">Enquire now →</span>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="full-width page-section section--tint contact-form-section">
+  <section id="contact" class="full-width page-section contact-form-section section--tint">
     <div class="container">
       <div class="section-header">
         <h2>Contact Us</h2>
